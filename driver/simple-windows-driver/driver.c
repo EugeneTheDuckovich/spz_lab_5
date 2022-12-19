@@ -1,7 +1,7 @@
 #include "driver.h"
 
-UNICODE_STRING DeviceName = RTL_CONSTANT_STRING(L"\\Device\\my-win-device");
-UNICODE_STRING SysLinkName = RTL_CONSTANT_STRING(L"\\??\\link-my-win-device");
+UNICODE_STRING DeviceName = RTL_CONSTANT_STRING(L"\\Device\\lab5_brigade11_device");
+UNICODE_STRING SysLinkName = RTL_CONSTANT_STRING(L"\\??\\lab5_brigade11_symb_link");
 PDEVICE_OBJECT DeviceObject = NULL;
 
 #define DEVICE_SEND_BUFF CTL_CODE(FILE_DEVICE_UNKNOWN, 0x801, METHOD_BUFFERED, FILE_WRITE_DATA)
